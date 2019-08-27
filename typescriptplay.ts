@@ -105,6 +105,32 @@ class Animall{
 var objj = new Animall('Dog','White');
 //console.log('Animal name is : '+obj.name+'  , Animal color is : '+objj.color); //Error because field color is private
 
+/*
+    Changes to objects
+*/
 
+var person = {
+    firstName:"Tom", 
+    lastName:"Hanks", 
+    sayHello:function() {  }  //Type template 
+ } 
+ person.sayHello = function() {  
+    console.log("hello "+person.firstName)
+ }  
+ person.sayHello();
 
-
+/*
+    Passing objects as parameters
+*/
+interface IPoint { 
+    x:number 
+    y:number 
+ } 
+ function addPoints(p1:IPoint,p2:IPoint):IPoint { 
+    var x = p1.x + p2.x 
+    var y = p1.y + p2.y 
+    return {x:x,y:y} 
+ } 
+ 
+ var newPoint = addPoints({x:3,y:4},{x:5,y:1})
+ console.log(newPoint);

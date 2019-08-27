@@ -62,3 +62,35 @@ var Animal = /** @class */ (function () {
 ;
 var obj = new Animal('Dog', 'White');
 console.log('Animal name is : ' + obj.name + '  , Animal color is : ' + obj.color);
+/*
+    Access Specifiers : public,private,protected
+*/
+var Animall = /** @class */ (function () {
+    function Animall(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+    return Animall;
+}());
+;
+var objj = new Animall('Dog', 'White');
+//console.log('Animal name is : '+obj.name+'  , Animal color is : '+objj.color); //Error because field color is private
+/*
+    Changes to objects
+*/
+var person = {
+    firstName: "Tom",
+    lastName: "Hanks",
+    sayHello: function () { } //Type template 
+};
+person.sayHello = function () {
+    console.log("hello " + person.firstName);
+};
+person.sayHello();
+function addPoints(p1, p2) {
+    var x = p1.x + p2.x;
+    var y = p1.y + p2.y;
+    return { x: x, y: y };
+}
+var newPoint = addPoints({ x: 3, y: 4 }, { x: 5, y: 1 });
+console.log(newPoint);

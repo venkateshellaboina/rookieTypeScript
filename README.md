@@ -1,9 +1,9 @@
 # TypeScript
-#### Static Typed
-#### File extension : .ts 
-#### .ts file is compiled to create .js file
-#### Execution format ts : tsc <fileName.ts>
-#### After .js file is created use command : node <fileName.js>
+#### 1. Static Typed
+#### 2. File extension : .ts 
+#### 3. .ts file is compiled to create .js file
+#### 4. Execution format ts : tsc <fileName.ts>
+#### 5. After .js file is created use command : node <fileName.js>
 
 ```
 var message:string ='hello world';

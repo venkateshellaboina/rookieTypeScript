@@ -94,3 +94,15 @@ function addPoints(p1, p2) {
 }
 var newPoint = addPoints({ x: 3, y: 4 }, { x: 5, y: 1 });
 console.log(newPoint);
+/*
+    referencing a namespace
+*/
+///<reference path = 'Animale.ts' />
+var Cat = /** @class */ (function () {
+    function Cat() {
+        this.name = 'meow';
+    }
+    return Cat;
+}());
+var catobj = new Cat();
+console.log('cat name: ' + catobj.name);

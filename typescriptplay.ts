@@ -134,3 +134,4 @@ interface IPoint {
  
  var newPoint = addPoints({x:3,y:4},{x:5,y:1})
  console.log(newPoint);
+

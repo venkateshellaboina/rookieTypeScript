@@ -5,6 +5,7 @@
 4. Execution format ts : tsc <fileName.ts>
 5. After .js file is created use command : node <fileName.js>
 6. Semi-colon at the end is optional in TypeScript
+7. Refer typescriptplay.ts and typescriptplay.js above.
 
 ```
 main.ts : 

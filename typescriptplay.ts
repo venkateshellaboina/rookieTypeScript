@@ -43,3 +43,68 @@ disp(1,"xyz");
 var myTuple = [10,'hello','world'];
 console.log(myTuple[1]);
 
+/* 
+    Union Type 
+*/
+
+var num2:number|string;
+num2 = 1;
+console.log(num2);
+num2 = 'hello';
+console.log(num2);
+ //num2 = true; throws error because num2 is not of Boolean type
+
+ /*
+    interfaces
+ */
+
+interface IPerson { 
+    firstName:string, 
+    lastName:string, 
+    sayHi: ()=>string 
+ } 
+ 
+ var customer:IPerson = { 
+    firstName:"Quentin",
+    lastName:"Tarantino", 
+    sayHi: ():string =>{return "Hi there"} 
+ } 
+ 
+ console.log(customer.firstName) 
+ console.log(customer.lastName) 
+ console.log(customer.sayHi())  
+
+/*
+    class and objects
+*/
+
+class Animal{
+    name:string;
+    color : string;
+    constructor(name:string,color:string){
+        this.name = name;
+        this.color = color;
+    }
+};
+
+var obj = new Animal('Dog','White');
+console.log('Animal name is : '+obj.name+'  , Animal color is : '+obj.color);
+
+/*
+    Access Specifiers : public,private,protected
+*/
+class Animall{
+    name:string;
+    private color : string;
+    constructor(name:string,color:string){
+        this.name = name;
+        this.color = color;
+    }
+};
+
+var objj = new Animall('Dog','White');
+//console.log('Animal name is : '+obj.name+'  , Animal color is : '+objj.color); //Error because field color is private
+
+
+
+

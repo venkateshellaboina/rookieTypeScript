@@ -33,3 +33,32 @@ disp(1, "xyz");
 */
 var myTuple = [10, 'hello', 'world'];
 console.log(myTuple[1]);
+/*
+    Union Type
+*/
+var num2;
+num2 = 1;
+console.log(num2);
+num2 = 'hello';
+console.log(num2);
+var customer = {
+    firstName: "Quentin",
+    lastName: "Tarantino",
+    sayHi: function () { return "Hi there"; }
+};
+console.log(customer.firstName);
+console.log(customer.lastName);
+console.log(customer.sayHi());
+/*
+    class and objects
+*/
+var Animal = /** @class */ (function () {
+    function Animal(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+    return Animal;
+}());
+;
+var obj = new Animal('Dog', 'White');
+console.log('Animal name is : ' + obj.name + '  , Animal color is : ' + obj.color);

@@ -6,8 +6,12 @@
 #### 5. After .js file is created use command : node <fileName.js>
 
 ```
+main.ts : 
 var message:string ='hello world';
 console.log(message);
+
+C:\nodejs-play\nodejs-play-1> tsc main.ts
+C:\nodejs-play\nodejs-play-1> node main.js
 ```
 ## Type Assertion. Kind of type casting in C++/JAVA
 ```
@@ -54,5 +58,53 @@ num2 = 'hello';
 console.log(num2);
  //num2 = true; throws error because num2 is not of Boolean type
 ```
+ ## interface 
+
+ ```
+ interface IPerson { 
+    firstName:string, 
+    lastName:string, 
+    sayHi: ()=>string 
+ } 
  
+ var customer:IPerson = { 
+    firstName:"Quentin",
+    lastName:"Tarantino", 
+    sayHi: ():string =>{return "Hi there"} 
+ } 
+ 
+ console.log(customer.firstName) 
+ console.log(customer.lastName) 
+ console.log(customer.sayHi())  
+ ```
+
+ ## class and objects
+```
+ class Animal{
+    name:string;
+    color : string;
+    constructor(name:string,color:string){
+        this.name = name;
+        this.color = color;
+    }
+};
+
+var obj = new Animal('Dog','White');
+console.log('Animal name is : '+obj.name+'  , Animal color is : '+obj.color);
+```
+
+## Access Specifiers
+```
+class Animall{
+    name:string;
+    private color : string;
+    constructor(name:string,color:string){
+        this.name = name;
+        this.color = color;
+    }
+};
+
+var objj = new Animall('Dog','White');
+console.log('Animal name is : '+obj.name+'  , Animal color is : '+objj.color); //Error because field color is private
+```
 

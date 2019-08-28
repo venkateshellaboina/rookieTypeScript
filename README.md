@@ -1,4 +1,4 @@
-# TypeScript 
+# TypeScript : The Superset of Javascript
 1. Static Typed
 2. File extension : .ts 
 3. .ts file is compiled to create .js file

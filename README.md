@@ -1,9 +1,9 @@
-# TypeScript
+# TypeScript 
 1. Static Typed
 2. File extension : .ts 
 3. .ts file is compiled to create .js file
 4. Execution format ts : tsc <fileName.ts>
-5. After .js file is created use command : node <fileName.js>
+5. After .js file is created use command : node <fileName.js> 
 6. Semi-colon at the end is optional in TypeScript
 7. Refer typescriptplay.ts and typescriptplay.js above.
 
@@ -37,7 +37,7 @@ addsum(1,2,3,4);
 ```
 function disp(s1:string):void; 
 function disp(n1:number,s1:string):void; 
-
+// '?' refers that argument is optional
 function disp(x:any,y?:any):void { 
    console.log(x); 
    if(y!=undefined)
@@ -47,11 +47,13 @@ disp("abc");
 disp(1,"xyz");
 ```
 ## Tuples
+Kind of an array but can contain values of different types
  ```
 var myTuple = [10,'hello','world'];
 console.log(myTuple[1]);
 ```
 ## Union Type 
+Declaring a variable with multiple data types
 ```
 var num2:number|string;
 num2 = 1;

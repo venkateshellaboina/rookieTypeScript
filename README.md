@@ -63,7 +63,6 @@ console.log(num2);
  //num2 = true; throws error because num2 is not of Boolean type
 ```
  ## interface 
-
  ```
  interface IPerson { 
     firstName:string, 
